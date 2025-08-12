@@ -5,7 +5,11 @@
 </head>
 <body>
   <script>
-    console.log('Logging from iframe');
+    if (window !== window.top) {
+      console.log("Inside iframe");
+    } else {
+      console.log("Not inside iframe");
+    }
   </script>
   <h1>XSS Test Page</h1>
 </body>
