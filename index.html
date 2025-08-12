@@ -11,13 +11,11 @@
       console.log("Not inside iframe");
     }
   </script>
-  <script>
-    <button onclick="window.open('https://example.com', '_blank')">Open popup</button>
-  </script>
-  <script>
-    <button onclick="alert('Popup from inside iframe')">Click me for alert</button>
-  </script>
+
+  <button onclick="window.open('https://example.com', '_blank')">Open popup</button>
+  <button onclick="alert('Popup from inside iframe')">Click me for alert</button>
 
   <h1>XSS Test Page</h1>
 </body>
 </html>
+
