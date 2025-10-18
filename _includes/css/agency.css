@@ -326,6 +326,10 @@ fieldset[disabled] .btn-m.active {
     color: #{{ site.data.template.color.secondary }};
 }
 
+.navbar-header .brand {
+    color: #fff;
+}
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -395,6 +399,7 @@ header .intro-text .intro-heading {
     /*font-weight: 700;*/
     line-height: 75px;
     padding-bottom: 15px;
+    color: #fff;
 }
 
 @media(min-width:768px) {
@@ -437,6 +442,7 @@ header .intro-text .intro-heading {
         font-size: 75px;
         /*font-weight: 700;*/
         line-height: 75px;
+        color: #fff;
     }
 }
 
