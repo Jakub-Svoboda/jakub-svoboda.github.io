@@ -788,7 +788,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/contact-bg.jpg');
+    background-image: url('{{ site.baseurl }}/img/backgrounds/contact-bg.webp');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
