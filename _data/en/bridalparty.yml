@@ -1,23 +1,15 @@
-- name: Name
+- name: Lucie
   pic: 1
-  position: Role
+  position: Nevěsta
 
-- name: Name
+- name: Jakub
   pic: 2
-  position: Role
+  position: Ženich
 
-- name: Name
+- name: Pavel
   pic: 3
-  position: Role
+  position: Svědek nevěsty
 
-- name: Name
+- name: Ondřej
   pic: 4
-  position: Role
-
-- name: Name
-  pic: 5
-  position: Role
-
-- name: Name
-  pic: 6
-  position: Role
+  position: Svědek ženicha
