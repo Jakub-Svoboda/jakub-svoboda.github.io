@@ -358,16 +358,17 @@ header {
     background-image: url('{{ site.baseurl }}/img/backgrounds/contact-bg.webp');
     background-position: center center;
     /*background-position: top center;*/
-    background-repeat: none;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    min-height: 600px;
 }
 
 header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 header .intro-text .intro-lead-in {
@@ -398,21 +399,19 @@ header .intro-text .intro-heading {
     color: #fff;
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/backgrounds/contact-bg.webp');
-    /*background-position: center center;*/
-    background-position: top center;
-    background-repeat: none;
+    background-position: center center;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    min-height: 700px;
     /*opacity: 0.5;*/
 	}
 
     header .intro-text {
-        /*padding-top: 300px;*/
-        padding-top: 280px;
-        /*padding-bottom: 200px;*/
-        padding-bottom: 100px;
+        padding-top: 200px;
+        padding-bottom: 150px;
     }
 
     header .intro-text .intro-lead-in {
