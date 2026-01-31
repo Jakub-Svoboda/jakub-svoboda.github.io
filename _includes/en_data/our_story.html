@@ -34,6 +34,27 @@
             flex: 100%;
             max-width: 100%;
           }
+
+          /* Hide images after the first 3 on mobile */
+          .columnstory img.hidden-mobile {
+            display: none;
+          }
+
+          .columnstory img.hidden-mobile.show {
+            display: block;
+          }
+        }
+
+        #loadMoreBtn {
+          margin: 30px auto;
+          display: block;
+        }
+
+        /* Hide button on desktop */
+        @media screen and (min-width: 601px) {
+          #loadMoreBtn {
+            display: none;
+          }
         }
     </style>
 
@@ -56,36 +77,47 @@
             <div class="columnstory">
                 <img src="/img/story/03.jpeg">
                 <img src="/img/story/08.jpg">
-                <img src="/img/story/24.jpg">
-                <img src="/img/story/15.jpg">
-                <img src="/img/story/01.jpg">
+                <img src="/img/story/24.jpg" class="hidden-mobile">
+                <img src="/img/story/15.jpg" class="hidden-mobile">
+                <img src="/img/story/01.jpg" class="hidden-mobile">
             </div>
             <div class="columnstory">
                 <img src="/img/story/21.jpg">
                 <img src="/img/story/22.jpg">
-                <img src="/img/story/26.jpg">
-                <img src="/img/story/16.jpg">
-                <img src="/img/story/25.jpg">
-                <img src="/img/story/30.jpg">
-                <img src="/img/story/13.jpg">
+                <img src="/img/story/26.jpg" class="hidden-mobile">
+                <img src="/img/story/16.jpg" class="hidden-mobile">
+                <img src="/img/story/25.jpg" class="hidden-mobile">
+                <img src="/img/story/30.jpg" class="hidden-mobile">
+                <img src="/img/story/13.jpg" class="hidden-mobile">
             </div>
             <div class="columnstory">
                 <img src="/img/story/44.JPG">
-                <img src="/img/story/32.jpg">
-                <img src="/img/story/31.jpg">
-                <img src="/img/story/40.jpeg">
-                <img src="/img/story/10.jpg">
-                <img src="/img/story/07.jpg">
+                <img src="/img/story/32.jpg" class="hidden-mobile">
+                <img src="/img/story/31.jpg" class="hidden-mobile">
+                <img src="/img/story/40.jpeg" class="hidden-mobile">
+                <img src="/img/story/10.jpg" class="hidden-mobile">
+                <img src="/img/story/07.jpg" class="hidden-mobile">
             </div>
             <div class="columnstory">
-                <img src="/img/story/46.JPG">
-                <img src="/img/story/47.JPG">
-                <img src="/img/story/48.JPG">
-                <img src="/img/story/49.JPG">
-                <img src="/img/story/50.JPG">
-                <img src="/img/story/51.JPG">
-                 <img src="/img/story/43.JPG">
+                <img src="/img/story/46.JPG" class="hidden-mobile">
+                <img src="/img/story/47.JPG" class="hidden-mobile">
+                <img src="/img/story/48.JPG" class="hidden-mobile">
+                <img src="/img/story/49.JPG" class="hidden-mobile">
+                <img src="/img/story/50.JPG" class="hidden-mobile">
+                <img src="/img/story/51.JPG" class="hidden-mobile">
+                 <img src="/img/story/43.JPG" class="hidden-mobile">
             </div>
         </div>
+        <button id="loadMoreBtn" class="btn btn-xl">Zobrazit více fotek</button>
     </section>
+
+    <script>
+        document.getElementById('loadMoreBtn').addEventListener('click', function() {
+            var hiddenImages = document.querySelectorAll('.columnstory img.hidden-mobile');
+            for (var i = 0; i < hiddenImages.length; i++) {
+                hiddenImages[i].classList.add('show');
+            }
+            this.style.display = 'none';
+        });
+    </script>
 </html>
