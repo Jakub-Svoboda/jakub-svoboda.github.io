@@ -1,62 +1,22 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-    $(function(){
-    $(".ajaxForm").submit(function(e){
-        e.preventDefault();
-        var href = $(this).attr("action");
-        $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: href,
-            data: $(this).serialize(),
-            success: function(response){
-                if(response.status == "success"){
-                    alert('Merci. Votre message a bien été envoyé.');
-                    window.location.href = 'https://alicelepissier.com/_site/fr/#contact';
-                }else{
-                    alert("Une erreur est survenue: " + response.message);
-                }
-            }
-        });
-    });
-    });
-</script>
-<section id="contact">
+<section id="contact" style="background-color: #222 !important;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contactez Nous</h2>
-                <h3 class="section-subheading text-muted">Ou envoyez nous un email à <a href="mailto:petsgetsmarried@gmail.com">petsgetmarried@gmail.com</a>.</h3>
+                <h2 class="section-heading" style="color: #fff !important; text-shadow: 2px 2px 8px rgba(0,0,0,0.8), -1px -1px 4px rgba(0,0,0,0.6);">Confirmez votre présence</h2>
+                <h3 class="section-subheading text-muted" style="color: #fff !important; text-shadow: 2px 2px 6px rgba(0,0,0,0.8), -1px -1px 3px rgba(0,0,0,0.6);">Merci de confirmer votre présence avant le 31 mars 2026</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-                <!-- Create your own form using FormCarry: https://formcarry.com/ -->
-                <form class="ajaxForm" action="YOUR_FORM_CARRY_ENDPOINT" method="POST">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="control-group form-group">
-                                <input type="text" class="form-control" placeholder="Votre Nom" id="name" name="name" required data-validation-required-message="Renseignez votre prénom et votre nom.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group form-group">
-                                <input type="email" class="form-control" placeholder="Votre Email" id="email" name="email" required data-validation-required-message="Renseignez votre adresse email.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="control-group form-group">
-                                <textarea class="form-control" placeholder="Votre Message" id="message" name="message" required data-validation-required-message="Quel est votre message?"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">Envoyer Message</button>
-                        </div>
-                    </div>
-                </form>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="largepad" style="color: #fff !important; font-size: 18px; margin-bottom: 30px; text-shadow: 4px 4px 12px rgba(0,0,0,0.8), -1px -1px 3px rgba(0,0,0,0.6);">
+                    Nous serions ravis de savoir si vous pourrez assister à notre mariage.
+                    Veuillez cliquer sur le bouton ci-dessous et remplir le court formulaire.
+                </p>
+                <a href="YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" class="btn btn-xl">Confirmer ma présence</a>
+                <p style="color: #fff !important; margin-top: 30px; font-size: 14px; text-shadow: 2px 2px 6px rgba(0,0,0,0.8), -1px -1px 3px rgba(0,0,0,0.6);">
+                    Pour toute question, n'hésitez pas à nous contacter par email :
+                    <a href="mailto:petsgetmarried@gmail.com" style="color: #{{ site.data.template.color.primary }};">petsgetmarried@gmail.com</a>
+                </p>
             </div>
         </div>
     </div>
