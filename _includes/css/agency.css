@@ -313,6 +313,7 @@ fieldset[disabled] .btn-m.active {
     font-family: "stay_classy_sldtregular","Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.data.template.color.primary }};
     font-size: 2.5em;
+    padding-top: 10px;
 }
 
 .brand {
