@@ -387,9 +387,9 @@ header .intro-text .intro-heading {
     /*font-family: {{ site.data.template.font.primary }};*/
     font-family: 'stay_classy_sldtregular';
     text-shadow: 2px 2px 4px #000000;
-    font-size: 130px;
+    font-size: 80px;
     /*font-weight: 700;*/
-    line-height: 75px;
+    line-height: 1.2;
     padding-bottom: 25px;
     color: #fff;
 }
@@ -432,7 +432,7 @@ header .intro-text .intro-heading {
     text-shadow: 4px 4px 12px #000000, 0 0 8px #000000;
     font-size: 130px;
     /*font-weight: 700;*/
-    line-height: 75px;
+    line-height: 1.2;
     padding-bottom: 25px;
 }
 
