@@ -395,20 +395,20 @@ header .intro-text .intro-heading {
 }
 
 @media(min-width:768px) {
-	header {
-    text-align: center;
-    color: #fff;
-    background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/contact-bg.webp');
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    min-height: 700px;
-    /*opacity: 0.5;*/
-	}
+    header {
+        text-align: center;
+        color: #fff;
+        background-attachment: scroll;
+        background-image: url('{{ site.baseurl }}/img/backgrounds/contact-bg.webp');
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        min-height: 700px;
+        /*opacity: 0.5;*/
+    }
 
     header .intro-text {
         padding-top: 200px;
@@ -423,6 +423,7 @@ header .intro-text .intro-heading {
         margin-bottom: 25px;
         text-shadow: 4px 4px 12px #000000, 0 0 8px #000000;
     }
+}
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
